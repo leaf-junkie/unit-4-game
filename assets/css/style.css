@@ -1,8 +1,18 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
 h1 {
     color: grey;
 }
 
-.card {
+.instructions {
+    width: 50%;
 }
 
 .btn {

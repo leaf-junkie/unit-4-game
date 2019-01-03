@@ -23,47 +23,58 @@
             <div class="row">
                 <div class="instructions">
                     <h2>This is how you play</h2>
-                    <p></p>
+                    <p>Each crystal has been assigned an unknown value. 
+                        The value can be determined by clicking on the 
+                        crystals and doing a little math. Try to match 
+                        your current score to the goal!
+                    </p>
                 </div>
             </div>
 
-            <!-- row 2 -->
+            <!-- ROW 2 -->
             <div class="row">
                 <div class="card-group" col >
                     <div class="card">
                         <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-one">
                         <div class="card-footer">
-                        <button type="button" class="btn btn-dark">Button 1</button>
+                        <button type="button" id="gemA" class="btn btn-dark">Button 1</button>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-2">
+                        <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-two">
                         <div class="card-footer">
-                        <button type="button" class="btn btn-dark">Button 2</button>
+                        <button type="button" id="gemB" class="btn btn-dark">Button 2</button>
                         </div>
                     </div>
                     <div class="card">
                         <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-three">
                         <div class="card-footer">
-                        <button type="button" class="btn btn-dark">Button 3</button>
+                        <button type="button" id="gemC" class="btn btn-dark">Button 3</button>
                         </div>
+                    </div>
                     <div class="card">
-                        <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-4">
+                        <img src="https://art.pixilart.com/dd05f3954b85204.gif" class="card-img-top" alt="crystal-four">
                         <div class="card-footer">
-                        <button type="button" class="btn btn-dark">Button 4</button>
+                        <button type="button" id="gemD" class="btn btn-dark">Button 4</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- ROW 3 -->
-            <div class="row"></div>
-                <div class="scoreboard">
-                    <div id="wins">
-                        <h3>Wins: <span id="winCount">0</span></h3>
-                    </div>
-                    <div id="losses">
-                        <h3>Losses: <span id="loseCount">0</span></h3>
+                <!-- ROW 3 -->
+                <div class="row">
+                    <div class="column">
+                        <div>
+                            <h3>Goal: <span id="goal">39</span></h3>
+                        </div>
+                        <div>
+                            <h3>Current Score: <span id="currentScore">0</span></h3>
+                        </div>
+                        <div id="wins">
+                            <h3>Wins: <span id="winCount">0</span></h3>
+                        </div>
+                        <div id="losses">
+                            <h3>Losses: <span id="loseCount">0</span></h3>
+                        </div>
                     </div>
                 </div>
             </div>
