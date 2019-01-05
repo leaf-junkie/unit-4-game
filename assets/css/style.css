@@ -7,12 +7,17 @@ header {
     text-align: center;
 }
 
+.row {
+    margin: 25px;
+}
+
 h1 {
     color: grey;
 }
 
 .instructions {
     width: 50%;
+    margin: 0 auto;
 }
 
 .btn {
