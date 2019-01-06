@@ -23,60 +23,51 @@ $(document).ready(function() {
 
     // Game logic
     // When user clicks button, add value to current score
-    $('#gemA').on('click', function() {
-        currentScore = currentScore + gemA;
-        $('#currentScore').text(currentScore);
-        console.log('Current Score: ' + currentScore);
-        scoreChecker();
-    });
+    function addClickHandlers(){
+        $('#gemA').on('click', function() {
+            currentScore = currentScore + gemA;
+            $('#currentScore').text(currentScore);
+            console.log('Current Score: ' + currentScore);
+            scoreChecker();
+        });
 
-    $('#gemB').on('click', function() {
-        currentScore = currentScore + gemB;
-        $('#currentScore').text(currentScore);
-        console.log('Current Score: ' + currentScore);
-        scoreChecker();
-    });
+        $('#gemB').on('click', function() {
+            currentScore = currentScore + gemB;
+            $('#currentScore').text(currentScore);
+            console.log('Current Score: ' + currentScore);
+            scoreChecker();
+        });
 
-    $('#gemC').on('click', function() {
-        currentScore = currentScore + gemC;
-        $('#currentScore').text(currentScore);
-        console.log('Current Score: ' + currentScore);
-        scoreChecker();
-    });
+        $('#gemC').on('click', function() {
+            currentScore = currentScore + gemC;
+            $('#currentScore').text(currentScore);
+            console.log('Current Score: ' + currentScore);
+            scoreChecker();
+        });
 
-    $('#gemD').on('click', function() {
-        currentScore = currentScore + gemD;
-        $('#currentScore').text(currentScore);
-        console.log('Current Score: ' + currentScore);
-        scoreChecker();
-    });
+        $('#gemD').on('click', function() {
+            currentScore = currentScore + gemD;
+            $('#currentScore').text(currentScore);
+            console.log('Current Score: ' + currentScore);
+            scoreChecker();
+        });
+    }
+    addClickHandlers();
 
     // Check if current score is equal to goal number
     function scoreChecker() {
         if (currentScore < goal) {
             console.log('Keep guessing!');
-
         } else if (currentScore > goal) {
             lose();
             console.log('You lose!');
-        
         } else if (currentScore === goal) {
             $('.gems').off('click');
             win();
             console.log('You win!');
         }
     }
-
-    //     // When user clicks button, add value to current score
-    //     for (var i = 0; i < 4; i++) {
-    //         $('.gems').on('click', ()=> {
-    //         total += currentScore; //parseInt
-    //         console.log('Your current score is: ' + currentScore);
-    //         $('#currentScore').text();
-    //         });
-    //     }
         
-    // These are the functions
     // Invoke a win
     function win() {
 
@@ -103,9 +94,9 @@ $(document).ready(function() {
 
     // Resets the game
     function reset() {
-        random = Math.floor(Math.random()*101+29);
-        console.log(random);
-        $('#goal').text(random);
+        goal = Math.floor(Math.random()*101+29);
+        console.log(goal);
+        $('#goal').text(goal);
         
         gemA = Math.floor(Math.random()*11+1);
         gemB = Math.floor(Math.random()*11+1);
@@ -114,7 +105,8 @@ $(document).ready(function() {
         console.log('Gem A: ' + gemA + ' | Gem B: ' + gemB + ' | Gem C: ' + gemC + ' | Gem D: ' + gemD);
         
         // Enable button clicks for gems
-        $('.gems').on('click');
+        addClickHandlers()
+        // $('.gems').on('click');
 
         currentScore = 0;
         $('#currentScore').text(currentScore);
