@@ -17,46 +17,51 @@ $(document).ready(function() {
     let losses = 0;
     let currentScore = 0
 
-    $('#winCount').text(wins);
-    $('#lossCount').text(losses);
-    $('#currentScore').text(currentScore);
+    // $('#winCount').text(wins);
+    // $('#lossCount').text(losses);
+    // $('#currentScore').text(currentScore);
 
-    // This is the game logic
+    // Game logic
     // When user clicks button, add value to current score
     $('#gemA').on('click', function() {
         currentScore = currentScore + gemA;
+        $('#currentScore').text(currentScore);
         console.log('Current Score: ' + currentScore);
         scoreChecker();
     });
 
     $('#gemB').on('click', function() {
         currentScore = currentScore + gemB;
+        $('#currentScore').text(currentScore);
         console.log('Current Score: ' + currentScore);
         scoreChecker();
     });
 
     $('#gemC').on('click', function() {
         currentScore = currentScore + gemC;
+        $('#currentScore').text(currentScore);
         console.log('Current Score: ' + currentScore);
         scoreChecker();
     });
 
     $('#gemD').on('click', function() {
         currentScore = currentScore + gemD;
+        $('#currentScore').text(currentScore);
         console.log('Current Score: ' + currentScore);
         scoreChecker();
     });
 
-    // Check to see if the current score is equal to the goal number
+    // Check if current score is equal to goal number
     function scoreChecker() {
-        if ($('#currentScore') < goal) {
+        if (currentScore < goal) {
             console.log('Keep guessing!');
 
-        } else if ($('#currentScore') > goal) {
+        } else if (currentScore > goal) {
             lose();
             console.log('You lose!');
         
-        } else if ($('#currentScore') === goal) {
+        } else if (currentScore === goal) {
+            $('.gems').off('click');
             win();
             console.log('You win!');
         }
@@ -79,8 +84,8 @@ $(document).ready(function() {
         wins ++;
         console.log('You have won ' + wins + ' many times');
 
-        // Update number of wins in the DOM
-        $('#winCount').text('wins');
+        // Update number of wins in DOM
+        $('#winCount').text(wins);
         reset();
     }
 
@@ -89,10 +94,10 @@ $(document).ready(function() {
 
         // Increment losses by 1
         losses ++;
-        console.log('You have lost ' + losses + ' many times');
+        console.log('You have lost ' + losses + ' times');
 
-        // Update number of losses in the DOM
-        $('#lossCount').text('losses');
+        // Update number of losses in DOM
+        $('#lossCount').text(losses);
         reset();
     }
 
@@ -100,15 +105,19 @@ $(document).ready(function() {
     function reset() {
         random = Math.floor(Math.random()*101+29);
         console.log(random);
-
-        // Update new goal number in the DOM
-        $('#').text(randomNum);
-
+        $('#goal').text(random);
+        
         gemA = Math.floor(Math.random()*11+1);
         gemB = Math.floor(Math.random()*11+1);
         gemC = Math.floor(Math.random()*11+1);
         gemD = Math.floor(Math.random()*11+1);
+        console.log('Gem A: ' + gemA + ' | Gem B: ' + gemB + ' | Gem C: ' + gemC + ' | Gem D: ' + gemD);
+        
+        // Enable button clicks for gems
+        $('.gems').on('click');
+
         currentScore = 0;
+        $('#currentScore').text(currentScore);
     }
 
 });
