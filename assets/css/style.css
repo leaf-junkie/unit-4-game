@@ -1,23 +1,28 @@
 body {
     width: 100%;
     margin: 0 auto;
+    background-image: url(/assets/images/rocky.jpg);
 }
 
 header {
     text-align: center;
+    color: #fff;
 }
 
 .row {
     margin: 25px;
 }
 
-h1 {
-    color: grey;
+h1,
+h3,
+.scoreBoard {
+    color: #fff;
 }
 
 .instructions {
     width: 50%;
     margin: 0 auto;
+    color: #fff;
 }
 
 .btn {
