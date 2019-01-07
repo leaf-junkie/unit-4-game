@@ -1,10 +1,11 @@
 body {
-    background-image: url(/assets/images/rocky.jpg);
-    cursor: url(/assets/images/cursor-icon.png);
+    background-image: url(../images/rocky.jpg);
+    cursor: url(../images/cursor-icon.png);
 }
 
 .navbar {
     text-align: center;
+    border-bottom: 1px solid #fff;
 }
 
 .jumbotron {
@@ -17,13 +18,19 @@ header {
     margin: 0 auto;
 }
 
-.row {
+p {
+    font-family: ;
+    font-size: ;
+}
+
+.container {
     margin: 75px;
 }
 
 .scoreBoard {
     color: #fff;
     background-color: #343a40;
+    border: 1px solid #fff;
     text-align: center;
     padding: 10px;
     width: 25%;
@@ -45,6 +52,7 @@ footer {
 
 .footer-text {
     color: #fff;
+    border-top: 1px solid #fff;
     text-align: center;
     padding: 20px;
 }
