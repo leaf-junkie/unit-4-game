@@ -1,7 +1,7 @@
 body {
     background-image: url(../images/rocky.jpg);
     cursor: url(../images/cursor-icon.png);
-    font-family: monospace !important;
+    font-family: 'Bungee Hairline', monospace !important;
 }
 
 .navbar {
@@ -17,7 +17,7 @@ body {
 }
 
 .instructions {
-    font-family: monospace;
+    font-family: 'Bungee Hairline', monospace;
     font-size: 24px;
     margin-top: 40px;
 }
@@ -34,21 +34,30 @@ header {
     margin-top: 75px;
 }
 
+.btn {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .scoreBoard {
+    font-family: 'Bungee Hairline', monospace;
     color: #fff;
     background-color: #343a40;
     border: 1px solid #fff;
     text-align: center;
-    padding: 10px;
-    width: 25%;
+    padding: 15px;
+    width: 30%;
     margin: 0 auto;
     font-size: 24px;
     line-height: 150%;
 }
 
-.btn {
-    width: 100%;
-    margin: 0 auto;
+.score {
+    font-family: 'Ewert', monospace;
+    font-size: 60px;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-bottom: 0.5px solid #aaa;
 }
 
 footer {
