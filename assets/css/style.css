@@ -1,31 +1,50 @@
 body {
-    width: 100%;
-    margin: 0 auto;
     background-image: url(/assets/images/rocky.jpg);
+    cursor: url(/assets/images/cursor-icon.png);
+}
+
+.navbar {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #fff;
 }
 
 header {
-    text-align: center;
-    color: #fff;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .row {
-    margin: 25px;
+    margin: 75px;
 }
 
-h1,
-h3,
 .scoreBoard {
     color: #fff;
-}
-
-.instructions {
-    width: 50%;
+    background-color: #343a40;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
     margin: 0 auto;
-    color: #fff;
 }
 
 .btn {
     width: 100%;
     margin: 0 auto;
+}
+
+footer {
+    background-color: #343a40;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
