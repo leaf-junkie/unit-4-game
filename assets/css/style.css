@@ -33,10 +33,8 @@ header {
 
 /* Style container holding main content */
 .container {
-    margin: 75px;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 75px;
+    margin: 0px auto;
 }
 
 /* Make button width span card and center */
@@ -86,7 +84,7 @@ footer {
 }
 
 /* Media queries for different sized screens */
-@media screen and (max-width: 630px) and (orientation: portrait){
+@media screen and (max-width: 768px) and (orientation: portrait){
     header {
         width: device-width;
     }
@@ -95,16 +93,25 @@ footer {
         font-size: 36px;
     }
 
-    .scoreBoard {
-        width: 80%;
+    .card-group {
+        display: unset;
+    }
+    .card{
+        max-width: 50%;
+        float: left;
     }
 
-    footer {
-        margin-top: 25px; 
+    .card-footer {
+        padding: 0;
+    }
+
+    .scoreBoard {
+        width: 100%;
+        margin-bottom: 75px;
     }
 }
 
-@media screen and (max-width: 630px) and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape){
     body {
         margin-bottom: 50px;
     }
