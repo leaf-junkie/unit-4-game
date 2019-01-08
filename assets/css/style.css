@@ -106,7 +106,7 @@ footer {
 
 @media screen and (max-width: 630px) and (orientation: landscape){
     body {
-        bottom: 50px;
+        margin-bottom: 50px;
     }
 
     header {
