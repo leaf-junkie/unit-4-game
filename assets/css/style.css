@@ -86,12 +86,19 @@ footer {
 }
 
 /* Media queries for different sized screens */
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 630px) and (orientation: portrait){
     .jumbotron {
         font-size: 50px;
     }
 
     footer {
         margin-top: 25px; 
+    }
+}
+
+@media screen and (max-width: 630px) and (orientation: landscape){
+    footer {
+        margin-top: 50px; 
+        height: 25px;
     }
 }
