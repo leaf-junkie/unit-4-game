@@ -123,11 +123,8 @@ footer {
 }
 
 /* Media queries for landscape smartphones */
-
-/* Had a difficult time with this media query. */ 
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 824px) and (orientation: landscape){
     body {
-        /* Unsure why the background image has not been replaced by a color, like in the above query */
         background-image: none;
         background-color: #aaa;
     }
@@ -137,12 +134,15 @@ footer {
     }
 
     .container {
-        float: left;
+        margin-bottom: 1rem;
     }
 
-    /* Unsure why there is still padding around the gem buttons */
     .card-footer {
         padding: 0;
+    }
+
+    .scoreBoard {
+        margin-bottom: 5rem;
     }
 
 }
