@@ -105,6 +105,10 @@ footer {
 }
 
 @media screen and (max-width: 630px) and (orientation: landscape){
+    body {
+        bottom: 50px;
+    }
+
     header {
         width: device-width;
     }
