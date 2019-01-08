@@ -27,7 +27,8 @@ header {
 /* Style text  in header under "Gem Prospector" */
 .instructions {
     font-family: 'Bungee Hairline', monospace;
-    font-size: 24px;
+    -webkit-text-stroke-width: 1.5px;
+    font-size: 28px;
     margin-top: 40px;
 }
 
@@ -51,6 +52,7 @@ header {
     width: 100%;
     margin: 0 auto;
     font-size: 22px;
+    -webkit-text-stroke-width: 1.5px;
 }
 
 /* Style div holding all score values */
@@ -65,11 +67,11 @@ header {
     margin: 0 auto;
     font-size: 28px;
     line-height: 150%;
+    -webkit-text-stroke-width: 1.5px;
 }
 
 /* Style content inside scoreBoard class */
 .score {
-    font-family: 'Ewert', monospace;
     font-size: 60px;
     padding: 25px;
     margin-bottom: 15px;
