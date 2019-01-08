@@ -90,9 +90,13 @@ footer {
     header {
         width: device-width;
     }
-    
+
     .jumbotron {
-        font-size: 50px;
+        font-size: 32px;
+    }
+
+    .scoreBoard {
+        width: 75%;
     }
 
     footer {
@@ -108,5 +112,9 @@ footer {
     footer {
         margin-top: 50px; 
         height: 25px;
+    }
+    
+    .footer-text {
+        padding: 0;
     }
 }
