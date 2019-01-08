@@ -85,6 +85,11 @@ footer {
 
 /* Media queries for different sized screens */
 @media screen and (max-width: 768px) and (orientation: portrait){
+    body {
+        background-image: none;
+        background-color: #aaa;
+    }
+    
     header {
         width: device-width;
     }
@@ -96,6 +101,7 @@ footer {
     .card-group {
         display: unset;
     }
+
     .card{
         max-width: 50%;
         float: left;
@@ -109,10 +115,18 @@ footer {
         width: 100%;
         margin-bottom: 75px;
     }
+
+    #currentScore {
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape){
     body {
+        background-image: none;
+        background-color: #aaa;
         margin-bottom: 50px;
     }
 
@@ -120,16 +134,16 @@ footer {
         width: device-width;
     }
 
-    .scoreBoard {
-        width: 80%;
+    .card-group {
+        width: 100%;
     }
-    
-    footer {
-        margin-top: 50px; 
-        height: 25px;
-    }
-    
-    .footer-text {
+
+    .card-footer {
         padding: 0;
+    }
+
+    .scoreBoard {
+        width: 100%;
+        margin: 25px 0 100px 0;
     }
 }
