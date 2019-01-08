@@ -130,15 +130,19 @@ footer {
         /* Unsure why the background image has not been replaced by a color, like in the above query */
         background-image: none;
         background-color: #aaa;
-        margin-bottom: 50px;
     }
 
     header {
         width: device-width;
     }
 
+    .container {
+        float: left;
+    }
+
     /* Unsure why there is still padding around the gem buttons */
     .card-footer {
         padding: 0;
     }
+
 }
