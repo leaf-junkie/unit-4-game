@@ -1,4 +1,4 @@
-/* Apple custom background and font to site */
+/* Apply custom background and font to site */
 body {
     background-image: url(../images/rocky.jpg);
     font-family: 'Bungee Hairline', monospace !important;
@@ -34,13 +34,23 @@ header {
 /* Style container holding main content */
 .container {
     width: 100%;
-    margin: 0px auto;
+    margin: 0 auto;
+}
+
+.card-group {
+    margin-bottom: 40px;
+}
+
+/* Remove padding from card footer around buttons */
+.card-footer {
+    padding: 0;
 }
 
 /* Make button width span card and center */
 .btn {
     width: 100%;
     margin: 0 auto;
+    font-size: 22px;
 }
 
 /* Style div holding all score values */
@@ -53,7 +63,7 @@ header {
     padding: 15px;
     width: 30%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 150%;
 }
 
@@ -112,10 +122,6 @@ footer {
         margin: 0;
     }
 
-    .card-footer {
-        padding: 0;
-    }
-
     .scoreBoard {
         width: 100%;
         margin-bottom: 6rem;
@@ -135,10 +141,6 @@ footer {
 
     .container {
         margin-bottom: 1rem;
-    }
-
-    .card-footer {
-        padding: 0;
     }
 
     .scoreBoard {
