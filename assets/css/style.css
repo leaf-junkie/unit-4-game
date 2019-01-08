@@ -96,7 +96,7 @@ footer {
     }
 
     .scoreBoard {
-        width: 75%;
+        width: 80%;
     }
 
     footer {
@@ -107,6 +107,10 @@ footer {
 @media screen and (max-width: 630px) and (orientation: landscape){
     header {
         width: device-width;
+    }
+
+    .scoreBoard {
+        width: 80%;
     }
     
     footer {
